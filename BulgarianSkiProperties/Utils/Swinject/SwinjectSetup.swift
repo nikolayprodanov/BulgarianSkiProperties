@@ -13,7 +13,7 @@ class SwinjectSetup {
     /// Starts Swinject setuping
     static func start() -> Container {
         let container = Container()
-     
+
         // Variables
         
         // VC
