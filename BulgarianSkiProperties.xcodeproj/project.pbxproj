@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6B239EB49E02A43867A44EB9 /* Pods_BulgarianSkiProperties.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95996F2C3D22EF7F5CC722CF /* Pods_BulgarianSkiProperties.framework */; };
 		78FDB7781FDD161100369A26 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78FDB7771FDD161100369A26 /* AppDelegate.swift */; };
 		78FDB77A1FDD161100369A26 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78FDB7791FDD161100369A26 /* ViewController.swift */; };
 		78FDB77D1FDD161100369A26 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78FDB77B1FDD161100369A26 /* Main.storyboard */; };
@@ -22,6 +23,9 @@
 		78FDB77E1FDD161100369A26 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		78FDB7811FDD161100369A26 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		78FDB7831FDD161100369A26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8F3C07818A79FB6D765D9A8C /* Pods-BulgarianSkiProperties.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BulgarianSkiProperties.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BulgarianSkiProperties/Pods-BulgarianSkiProperties.debug.xcconfig"; sourceTree = "<group>"; };
+		95996F2C3D22EF7F5CC722CF /* Pods_BulgarianSkiProperties.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BulgarianSkiProperties.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E7ADE54677055E6538FB1CA0 /* Pods-BulgarianSkiProperties.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BulgarianSkiProperties.release.xcconfig"; path = "Pods/Target Support Files/Pods-BulgarianSkiProperties/Pods-BulgarianSkiProperties.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6B239EB49E02A43867A44EB9 /* Pods_BulgarianSkiProperties.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +45,8 @@
 			children = (
 				78FDB7761FDD161100369A26 /* BulgarianSkiProperties */,
 				78FDB7751FDD161100369A26 /* Products */,
+				98210182FEFE1829B3B37948 /* Pods */,
+				D93B87348F457F1020C85910 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +71,23 @@
 			path = BulgarianSkiProperties;
 			sourceTree = "<group>";
 		};
+		98210182FEFE1829B3B37948 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8F3C07818A79FB6D765D9A8C /* Pods-BulgarianSkiProperties.debug.xcconfig */,
+				E7ADE54677055E6538FB1CA0 /* Pods-BulgarianSkiProperties.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D93B87348F457F1020C85910 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				95996F2C3D22EF7F5CC722CF /* Pods_BulgarianSkiProperties.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 78FDB7861FDD161100369A26 /* Build configuration list for PBXNativeTarget "BulgarianSkiProperties" */;
 			buildPhases = (
+				8FA909143A6D70DDA3B1EF5C /* [CP] Check Pods Manifest.lock */,
 				78FDB7701FDD161100369A26 /* Sources */,
 				78FDB7711FDD161100369A26 /* Frameworks */,
 				78FDB7721FDD161100369A26 /* Resources */,
+				06E2F5079F294E495F3CF1DF /* [CP] Embed Pods Frameworks */,
+				FC99E1A8F5B7170CC6394601 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,6 +157,57 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		06E2F5079F294E495F3CF1DF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BulgarianSkiProperties/Pods-BulgarianSkiProperties-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8FA909143A6D70DDA3B1EF5C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BulgarianSkiProperties-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FC99E1A8F5B7170CC6394601 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BulgarianSkiProperties/Pods-BulgarianSkiProperties-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		78FDB7701FDD161100369A26 /* Sources */ = {
@@ -211,7 +289,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -262,7 +340,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -272,6 +350,7 @@
 		};
 		78FDB7871FDD161100369A26 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8F3C07818A79FB6D765D9A8C /* Pods-BulgarianSkiProperties.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -280,13 +359,14 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = np.BulgarianSkiProperties;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		78FDB7881FDD161100369A26 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E7ADE54677055E6538FB1CA0 /* Pods-BulgarianSkiProperties.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -295,7 +375,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = np.BulgarianSkiProperties;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
