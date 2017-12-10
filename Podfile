@@ -6,5 +6,7 @@ target 'BulgarianSkiProperties' do
   use_frameworks!
 
   # Pods for BulgarianSkiProperties
-
+  pod 'Swinject', '~> 2.1.0'
+  pod 'ReactiveSwift', '~> 3.0'
+  
 end

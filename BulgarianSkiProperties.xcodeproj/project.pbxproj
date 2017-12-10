@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		6B239EB49E02A43867A44EB9 /* Pods_BulgarianSkiProperties.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95996F2C3D22EF7F5CC722CF /* Pods_BulgarianSkiProperties.framework */; };
+		787D5DF21FDDA11D00A964BA /* SwinjectSetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787D5DF11FDDA11D00A964BA /* SwinjectSetup.swift */; };
 		78FDB7781FDD161100369A26 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78FDB7771FDD161100369A26 /* AppDelegate.swift */; };
-		78FDB77A1FDD161100369A26 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78FDB7791FDD161100369A26 /* ViewController.swift */; };
 		78FDB77D1FDD161100369A26 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78FDB77B1FDD161100369A26 /* Main.storyboard */; };
 		78FDB77F1FDD161100369A26 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78FDB77E1FDD161100369A26 /* Assets.xcassets */; };
 		78FDB7821FDD161100369A26 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78FDB7801FDD161100369A26 /* LaunchScreen.storyboard */; };
@@ -18,9 +18,9 @@
 /* Begin PBXFileReference section */
 		784DD5FA1FDD9E1300B50EDD /* Localizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localizer.swift; sourceTree = "<group>"; };
 		784DD5FB1FDD9E1300B50EDD /* Texts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Texts.swift; sourceTree = "<group>"; };
+		787D5DF11FDDA11D00A964BA /* SwinjectSetup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwinjectSetup.swift; sourceTree = "<group>"; };
 		78FDB7741FDD161100369A26 /* BulgarianSkiProperties.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BulgarianSkiProperties.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		78FDB7771FDD161100369A26 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		78FDB7791FDD161100369A26 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		78FDB77C1FDD161100369A26 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		78FDB77E1FDD161100369A26 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		78FDB7811FDD161100369A26 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -45,6 +45,7 @@
 		784DD5F81FDD9E1300B50EDD /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				787D5DF01FDDA10D00A964BA /* Swinject */,
 				784DD5F91FDD9E1300B50EDD /* Localizer */,
 			);
 			path = Utils;
@@ -57,6 +58,14 @@
 				784DD5FB1FDD9E1300B50EDD /* Texts.swift */,
 			);
 			path = Localizer;
+			sourceTree = "<group>";
+		};
+		787D5DF01FDDA10D00A964BA /* Swinject */ = {
+			isa = PBXGroup;
+			children = (
+				787D5DF11FDDA11D00A964BA /* SwinjectSetup.swift */,
+			);
+			path = Swinject;
 			sourceTree = "<group>";
 		};
 		78FDB76B1FDD161100369A26 = {
@@ -82,7 +91,6 @@
 			children = (
 				784DD5F81FDD9E1300B50EDD /* Utils */,
 				78FDB7771FDD161100369A26 /* AppDelegate.swift */,
-				78FDB7791FDD161100369A26 /* ViewController.swift */,
 				78FDB77B1FDD161100369A26 /* Main.storyboard */,
 				78FDB77E1FDD161100369A26 /* Assets.xcassets */,
 				78FDB7801FDD161100369A26 /* LaunchScreen.storyboard */,
@@ -185,9 +193,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-BulgarianSkiProperties/Pods-BulgarianSkiProperties-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ReactiveSwift/ReactiveSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/Swinject/Swinject.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Swinject.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -234,8 +249,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				78FDB77A1FDD161100369A26 /* ViewController.swift in Sources */,
 				78FDB7781FDD161100369A26 /* AppDelegate.swift in Sources */,
+				787D5DF21FDDA11D00A964BA /* SwinjectSetup.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
