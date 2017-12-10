@@ -16,6 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		784DD5FA1FDD9E1300B50EDD /* Localizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localizer.swift; sourceTree = "<group>"; };
+		784DD5FB1FDD9E1300B50EDD /* Texts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Texts.swift; sourceTree = "<group>"; };
 		78FDB7741FDD161100369A26 /* BulgarianSkiProperties.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BulgarianSkiProperties.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		78FDB7771FDD161100369A26 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		78FDB7791FDD161100369A26 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -40,6 +42,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		784DD5F81FDD9E1300B50EDD /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				784DD5F91FDD9E1300B50EDD /* Localizer */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		784DD5F91FDD9E1300B50EDD /* Localizer */ = {
+			isa = PBXGroup;
+			children = (
+				784DD5FA1FDD9E1300B50EDD /* Localizer.swift */,
+				784DD5FB1FDD9E1300B50EDD /* Texts.swift */,
+			);
+			path = Localizer;
+			sourceTree = "<group>";
+		};
 		78FDB76B1FDD161100369A26 = {
 			isa = PBXGroup;
 			children = (
@@ -61,6 +80,7 @@
 		78FDB7761FDD161100369A26 /* BulgarianSkiProperties */ = {
 			isa = PBXGroup;
 			children = (
+				784DD5F81FDD9E1300B50EDD /* Utils */,
 				78FDB7771FDD161100369A26 /* AppDelegate.swift */,
 				78FDB7791FDD161100369A26 /* ViewController.swift */,
 				78FDB77B1FDD161100369A26 /* Main.storyboard */,
